@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>WELCOME TEACHERS</h1>
+{% for teachers in allTeachers %}
+<p>{{ teachers.teacher_name }}</p>
+<p>{{ teachers.teacher_school }}</p>
+{% endfor %}
+<p><h2>Thankyou for your service and compassion in changing the learning enviornment </h2></p>
+<p><h2>We appreciate all your time and effort in providing quality education</h2></p>
+<p><h1>To log in your hours click <a href="{% url 'invoice' %}">here</a></h1></p>
+
+
+</body>
+</html>
